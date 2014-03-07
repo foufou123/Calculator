@@ -24,6 +24,10 @@ describe('calculator') do
   it('handles floats and decimals with addition') do
     calculator('What is 2.5 plus 3.6?').should(eq(6.1))
   end
-  
 end
 
+describe('string_breaker') do
+  it('splits more than one question and solves them individually') do
+    string_breaker('What is 2 plus 2? What is 3 times 3?').should(eq([4, 9]))
+  end
+end
